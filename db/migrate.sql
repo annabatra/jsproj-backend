@@ -12,13 +12,15 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS cookies (
     id INT NOT NULL,
     title VARCHAR(50) NOT NULL,
+    image VARCHAR(300) NOT NULL,
+    price INT(4) NOT NULL,
     description VARCHAR(1000)
 );
 
 INSERT INTO cookies
-    (id, title, description)
+    (id, title, image, price, description)
 VALUES
-    (1, "Chocolate Chip", "containing chocolate chips, yummie"),
-    (2, "Red Velvet", "A red cookie"),
-    (3, "Grinch Cookies", "A green cookie, stealing christmas")
+    (1, "Chocolate Chip", "chocolatechip.jpg", 10, "containing chocolate chips, yummie"),
+    (2, "Red Velvet", "redvelvet.jpg", 7, "A red cookie"),
+    (3, "Grinch Cookies", "grinch.jpg", 15, "A green cookie, stealing christmas")
 ;
