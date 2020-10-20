@@ -8,7 +8,7 @@ const register = require('./routes/register');
 const login = require('./routes/login');
 
 const app = express();
-const port = 1337;
+const port = 3030;
 
 
 //end of consts
