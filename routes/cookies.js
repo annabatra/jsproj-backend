@@ -15,7 +15,7 @@ router.use(express.json());
 
 
 // Route to get cookies content
-router.get("/cookies/:id", function(req, res, next) {
+router.get("/:id", function(req, res, next) {
     db.each("SELECT * FROM cookies WHERE id = " + req.params.id, function(err, row) {
         const data = {
             data: {
