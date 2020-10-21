@@ -21,7 +21,9 @@ router.get("/:id", function(req, res, next) {
             data: {
                 id: req.params.id,
                 title: row.title,
-                description: row.description
+                description: row.description,
+                price: row.price,
+                image: row.image
             }
         }
         res.json(data);
