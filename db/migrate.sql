@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS users (
     UNIQUE(email)
 );
 
-
+DROP TABLE IF EXISTS cookies;
 CREATE TABLE IF NOT EXISTS cookies (
     id INT NOT NULL,
     title VARCHAR(50) NOT NULL,
