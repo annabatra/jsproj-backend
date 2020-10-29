@@ -21,12 +21,16 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", (req, res) => {
-    console.log(req.body.email + "bend");
-    console.log(req.body.password + "bend");
+    console.log(req.body.email + "emailhär");
+    console.log(req.body.password + "lösenhär");
 
     bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
-        db.run("INSERT INTO users (email, password) VALUES (?, ?)",
+        db.run("INSERT INTO users (depot, email, cookie1, cookie2, cookie3, password) VALUES (?, ?, ?, ?, ?, ?)",
+            0,
             req.body.email,
+            0,
+            0,
+            0,
             hash, (err) => {
                 if (err) {
                     console.log(err);

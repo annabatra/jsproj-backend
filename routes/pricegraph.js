@@ -43,6 +43,7 @@ router.get("/:id", function(req, res, next) {
     });
 })
 
+
 // function to verify user
 function checkToken(req, res, next) {
     const token = req.headers['x-access-token'];

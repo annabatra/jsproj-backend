@@ -6,10 +6,10 @@ router.get('/', function(req, res) {
 });
 
 var presentation = `
-      <h1>PROJEKT JSRAMVERK, TRADING WOLF OF WALL STREET!<br/><br/></h1>
+      <h1>Crunchy cookies, bästa stället att tradea kakor!<br/><br/></h1>
       <img src="ownlogo.png" className="App-logo" alt="logo" />
       <p>
-      Detta ska bli en sida för trading... typ.
+      Välkommen till sidan där kakor är vardagen! De är gott med kakor, det är gott med pengar, varför inte kombinera det?
       </p>`;
 
 module.exports = router;

@@ -6,6 +6,10 @@ const presentation = require('./routes/presentation');
 const cookies = require('./routes/cookies');
 const register = require('./routes/register');
 const login = require('./routes/login');
+const userpage = require('./routes/userpage');
+const pricegraph = require('./routes/pricegraph');
+const buy = require('./routes/buy');
+const sell = require('./routes/sell');
 
 const app = express();
 const port = 3030;
@@ -25,7 +29,10 @@ app.use('/', presentation);
 app.use('/cookies', cookies);
 app.use('/register', register);
 app.use('/login', login);
-
+app.use('/userpage', userpage);
+app.use('/pricegraph', pricegraph);
+app.use('/buy', buy);
+app.use('/sell', sell);
 // This is middleware called for all routes.
 // Middleware takes three parameters.
 app.use((req, res, next) => {
