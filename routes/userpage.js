@@ -7,7 +7,7 @@ router.use(bodyParser.json());
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 router.use(express.json());
-const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = process.env.secret;
 
 // hämta rätt inloggad user
 router.get("/:email", (req, res, next) => {
