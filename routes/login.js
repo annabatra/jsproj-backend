@@ -14,7 +14,7 @@ router.use(express.json());
 let config = require('../config/config.json');
 
 
-const secret = process.env.secret;
+const secret = process.env.JWT_SECRET;
 
 //const secret = config.secret;
 

@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 // let config = require('../config/config.json');
 const jwt = require('jsonwebtoken');
 
-const jwtSecret = process.env.secret;
+const jwtSecret = process.env.JWT_SECRET;
 
 router.use(bodyParser.json());
 router.use(express.json());
